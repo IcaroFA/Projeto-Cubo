@@ -1,30 +1,26 @@
 {
   "name": "cubo-back",
   "version": "1.0.0",
-  "description": "Case Semana 3 - Cubo FullStack",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "clear && echo \"Running tests...\" && jest",
-    "start": "tsc && node ./build/src/index.js",
-    "dev": "ts-node-dev ./src/index.ts",
-    "migrations": "tsnd ./src/data/Migrations.ts"
+    "start": "tsc && node ./build/index.js",
+    "dev": "tsnd --transpile-only --ignore-watch node_modules ./src/index.ts",
+    "build": "tsc",
+    "migrations": "tsnd ./src/data/migrations.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/jest": "^27.4.1",
     "axios": "^0.26.1",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "jest": "^27.5.1",
     "jsonwebtoken": "^8.5.1",
-    "knex": "^1.0.5",
-    "moment": "^2.29.2",
+    "knex": "^1.0.4",
     "mysql": "^2.18.1",
-    "ts-jest": "^27.1.4",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
